@@ -1,13 +1,10 @@
-# Byte-compiled / optimized / DLL files
+# --------------------
+# Python bytecode / build
+# --------------------
 __pycache__/
 *.py[cod]
-
-# C extensions
 *.so
-
-# Distribution / packaging
 .Python
-env/
 build/
 develop-eggs/
 dist/
@@ -23,17 +20,25 @@ var/
 .installed.cfg
 *.egg
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+# --------------------
+# Virtual environments
+# --------------------
+.env/
+.venv/
+env/
+venv/
+*.env
 
-# Installer logs
+# --------------------
+# Packaging / Logs
+# --------------------
 pip-log.txt
 pip-delete-this-directory.txt
+*.log
 
-# Unit test / coverage reports
+# --------------------
+# Unit test / coverage
+# --------------------
 htmlcov/
 .tox/
 .coverage
@@ -43,48 +48,63 @@ nosetests.xml
 coverage.xml
 *.cover
 
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-
-# Sphinx documentation
+# --------------------
+# Documentation
+# --------------------
 docs/_build/
 
-# PyBuilder
-target/
-
-# DotEnv configuration
-.env
-
-# Database
-*.db
-*.rdb
-
-# Pycharm
-.idea
-
-# VS Code
+# --------------------
+# IDE / Editor settings
+# --------------------
+.idea/
 .vscode/
 *.code-workspace
-
-# Spyder
 .spyproject/
-
-# Jupyter NB Checkpoints
-.ipynb_checkpoints/
-
-# exclude data from source control by default
-# /data/
-
-# Mac OS-specific storage files
-.DS_Store
-
-# vim
+.mypy_cache/
 *.swp
 *.swo
 
-# Mypy cache
-.mypy_cache/
+# --------------------
+# Jupyter Notebooks
+# --------------------
+.ipynb_checkpoints/
+
+# --------------------
+# Data science files
+# --------------------
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.json
+*.xml
+*.db
+*.rdb
+*.sqlite
+*.h5
+*.parquet
+
+# Large ML model files
+*.joblib
+*.hdf5
+*.weights
+*.pt
+*.pth
+*.onnx
+
+# --------------------
+# Installers / Large binaries
+# --------------------
+Anaconda*.sh
+*.sh
+*.exe
+*.msi
+*.dmg
+*.tar
+*.zip
+
+# --------------------
+# OS-specific
+# --------------------
+.DS_Store
+Thumbs.db
